@@ -16,7 +16,7 @@ class BestBooks extends React.Component {
 
     return (
       <>
-        <h2>My Essential Lifelong Learning &amp; Formation Shelf</h2>
+        <h2>Your Books Library</h2>
 
         {this.state.books.length ? (
           <p>Book Carousel coming soon</p>
