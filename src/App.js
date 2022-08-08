@@ -8,6 +8,8 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import LogInOut from './components/Auth0Provider';
+import UserRender from './components/Profile';
 
 class App extends React.Component {
   render() {
@@ -16,10 +18,23 @@ class App extends React.Component {
         <Router>
           <Header />
           <Routes>
-            <Route 
+          <Route 
               exact path="/"
               element={<BestBooks />}
             >
+               </Route>
+            <Route 
+              exact path="/Profile"
+              element={<UserRender />}
+            >
+              
+            </Route>
+            <Route 
+              exact path="/Login"
+              element={<LogInOut />}
+              
+            >
+              
             </Route>
             {/* PLACEHOLDER: add a route with a path of '/about' that renders the `About` component */}
           </Routes>
