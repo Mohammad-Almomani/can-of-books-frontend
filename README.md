@@ -23,7 +23,7 @@ Go to log in, you can log in with your google or create an account with any emai
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
 
-## Time Estimates
+## Time Estimates Class 11
 
 Name of feature: Auth0
 
@@ -34,3 +34,16 @@ Start time: 1:00 Pm
 Finish time: 3:30 PM
 
 Actual time needed to complete: 1:30 hours
+
+
+## Time Estimates Class 12
+
+Name of feature: Auth0
+
+Estimate of time needed to complete: 8 hours
+
+Start time: 1:30 Pm
+
+Finish time: 7:30 PM
+
+Actual time needed to complete: 5 hours
