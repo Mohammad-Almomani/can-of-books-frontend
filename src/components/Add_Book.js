@@ -1,6 +1,7 @@
 import { Component } from "react";
 import axios from "axios";
 import AddForm from "./Form";
+import swal from 'sweetalert';
 
 export default class AddBook extends Component {
 
@@ -13,7 +14,9 @@ export default class AddBook extends Component {
           }
           console.log(newBook)
           await axios.post('http://localhost:3001/books', {newBook});
-          alert("book added")
+
+        swal("Book added Successfully!", "click the button to continue!", "success");
+        
     } 
 
     render(){
