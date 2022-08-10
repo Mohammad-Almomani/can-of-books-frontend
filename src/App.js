@@ -11,6 +11,8 @@ import {
 import LogInOut from './components/Auth0Provider';
 import UserRender from './components/Profile';
 import Profile from './About';
+import AddBook from './components/Add_Book';
+import ManegeBooks from './components/ManegeBooks';
 
 class App extends React.Component {
   render() {
@@ -42,7 +44,21 @@ class App extends React.Component {
               element={<Profile />}
               
             >
+
+            </Route>
+            <Route 
+              exact path="/AddBook"
+              element={<AddBook />}
               
+            >
+
+            </Route>
+            <Route 
+              exact path="/DeleteBook"
+              element={<ManegeBooks />}
+              
+            >
+
             </Route>
           </Routes>
           <Footer />
