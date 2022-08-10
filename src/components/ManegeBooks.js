@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
 import Table from 'react-bootstrap/Table';
+import { Link } from 'react-router-dom'
 
 export default class ManegeBooks extends Component {
     constructor(props) {
@@ -19,13 +19,11 @@ export default class ManegeBooks extends Component {
     
     
     componentDidMount() {
-        console.log("inside the componentDidMount");
         this.getBooks();
       }
 
 
     deleteBook = async (id) => {
-        console.log(id);
         await axios.delete(`http://localhost:3001/books/${id}`);
         this.getBooks()
       }
@@ -49,12 +47,11 @@ export default class ManegeBooks extends Component {
           this.state.books.map((item, idx) => 
           <tr>
               
-              {/* <Link to={`/cat/${item._id}`}>update</Link> */}
               <td>{idx+1}</td>
               <td>{item.title}</td>
               <td>{item.status}</td>
               <td><button onClick={() => this.deleteBook(item._id)}>delete</button></td>
-              <td>@mdo</td>
+              <td><Link to={`/books/${item._id}`}><button>Update</button></Link></td>
            
         </tr>
           )

@@ -47,3 +47,16 @@ Start time: 1:30 Pm
 Finish time: 7:30 PM
 
 Actual time needed to complete: 5 hours
+
+
+## Time Estimates Class 13
+
+Name of feature: a lot of features
+
+Estimate of time needed to complete: 6 hours
+
+Start time: 1:30 Pm
+
+Finish time: 7:30 PM
+
+Actual time needed to complete: 6 hours
