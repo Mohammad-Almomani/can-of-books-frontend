@@ -16,9 +16,12 @@ function Header() {
         <NavItem><Link to="/" className="nav-link" style={{margin: '0px 15px'}} >Home</Link></NavItem>
         <NavItem><Link to="/Profile" className="nav-link" style={{margin: '0px 15px'}}>Profile</Link></NavItem>
         <NavItem><Link to="/Login" className="nav-link"  style={{margin: '0px 15px'}}>{log}</Link></NavItem>
+        <NavItem><Link to="/AddBook" className="nav-link"  style={{margin: '0px 15px'}}>Add Book</Link></NavItem>
+        <NavItem><Link to="/DeleteBook" className="nav-link"  style={{margin: '0px 15px'}}>Manege Books</Link></NavItem>
         <NavItem><Link to="/About" className="nav-link"  style={{margin: '0px 15px'}}>About Us</Link></NavItem>
 
         </div>
+        
       </Navbar>
     )
   }
